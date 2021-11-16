@@ -37,7 +37,7 @@ class SecondFragment : BaseFragment<FragmentSecondBinding>(FragmentSecondBinding
         val titleSize = binding.titleEditText.text.toString().length
         val descriptionSize = binding.descriptionEditText.text.toString().length
 
-        if (titleSize in 6..29 && descriptionSize in 6..299) {
+        if (titleSize in 6..29 && descriptionSize in 33..299) {
             return true
         }
         return false

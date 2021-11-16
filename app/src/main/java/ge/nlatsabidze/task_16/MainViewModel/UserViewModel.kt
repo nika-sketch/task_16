@@ -22,4 +22,10 @@ class UserViewModel : ViewModel() {
             userdao.insertUser(UserInformationTable(title, description, url))
         }
     }
+
+    fun deleteUser(user: UserInformationTable) {
+        viewModelScope.launch {
+            userdao.deleteUser(user)
+        }
+    }
 }

@@ -20,7 +20,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(FragmentHomeBinding::infl
 
     private lateinit var userItemAdapter: UserRecyclerAdapter
 
-
     override fun start() {
 
         goToSecondFragment()
